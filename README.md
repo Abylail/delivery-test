@@ -1,25 +1,10 @@
-# delivery-test
+# Тестовое задание
 
-## Project setup
-```
-npm install
-```
+`Возможно какие то моменты не учел, не так часто приходится делать лендосы за пару часов`
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Документация по [хранилищу](./src/store/README.md)
+`/config` - выполняет роль базы данных
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Документация по [assets](./src/assets/README.md)
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# delivery-test
+## Документация по [компонентам](./src/assets/README.md)
