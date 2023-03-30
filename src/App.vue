@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="landing-page">
+    <my-header :links="modules"/>
+    <main-module id="main"/>
+    <advantages-module id="advantages"/>
+    <history-module id="history"/>
+    <trusted-module id="trusted"/>
+    <my-footer/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyHeader from "@/components/common/layout/myHeader";
+import MainModule from "@/components/common/modules/mainModule";
+import AdvantagesModule from "@/components/common/modules/advantagesModule";
+import HistoryModule from "@/components/common/modules/historyModule";
+import MyFooter from "@/components/common/layout/myFooter";
+import TrustedModule from "@/components/common/modules/trustedModule";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {TrustedModule, MyFooter, HistoryModule, AdvantagesModule, MainModule, MyHeader},
+  data: () => ({
+    // Список модулей
+    modules: [
+      {name: "Главная", code: "main"},
+      {name: "Наши преимущества", code: "advantages"},
+      {name: "История Exline", code: "history"},
+      {name: "Нам доверяют", code: "trusted"},
+      {name: "Контакты", code: "contacts"},
+    ]
+  })
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.landing-page {
+  min-height: 100vh;
 }
 </style>
