@@ -5,4 +5,9 @@
         <path d="m17 11 4-4-4-4M21 7H9M7 21l-4-4 4-4M15 17H3" stroke="#EF363C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
+    <!-- search -->
+    <symbol id="search" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.35-4.35" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
 </svg>

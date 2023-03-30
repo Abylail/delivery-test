@@ -36,11 +36,13 @@ export default {
     display: grid;
     grid-column-gap: 24px;
     grid-template-columns: 1fr 1fr;
-    height: 600px;
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 24px;
+    }
   }
 
   &__text-block {
-    height: min-content;
     background: $color--background-gray;
     border-radius: 12px;
     padding: 30px;
@@ -55,7 +57,9 @@ export default {
   }
 
   &__image {
-    height: 100%;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
   }
 
   &__column {

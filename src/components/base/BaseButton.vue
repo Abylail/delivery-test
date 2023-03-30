@@ -1,7 +1,7 @@
 <template>
   <button
       class="base-button"
-      :style="{width}"
+      :style="{width, height}"
       v-bind="$attrs"
   >
     <slot/>
@@ -12,6 +12,10 @@
 export default {
   name: "BaseButton",
   props: {
+    height: {
+      type: String,
+      default: null
+    },
     width: {
       type: [String],
       default: null
@@ -24,7 +28,7 @@ export default {
 .base-button {
   text-align: center;
   padding: 12px 16px;
-  width: auto;
+  width: 100%;
   background: $color--red;
   color: white;
   border-radius: 12px;

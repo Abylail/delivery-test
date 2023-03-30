@@ -5,6 +5,8 @@ body {
 }
 
 a, button {
+  background: none;
+  border: none;
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -14,6 +16,11 @@ a, button {
 .container {
   max-width: $size--window-max-width;
   margin: 0 auto;
+
+  @media (max-width: ($size--window-max-width + 48px)) {
+    width: calc(100% - 48px);
+    padding: 0 24px;
+  }
 }
 
 // Тайтлы

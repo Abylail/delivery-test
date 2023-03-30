@@ -5,6 +5,7 @@
     <advantages-module id="advantages"/>
     <history-module id="history"/>
     <trusted-module id="trusted"/>
+    <contact-module id="contacts"/>
     <my-footer/>
   </div>
 </template>
@@ -16,10 +17,11 @@ import AdvantagesModule from "@/components/common/modules/advantagesModule";
 import HistoryModule from "@/components/common/modules/historyModule";
 import MyFooter from "@/components/common/layout/myFooter";
 import TrustedModule from "@/components/common/modules/trustedModule";
+import ContactModule from "@/components/common/modules/contactModule";
 
 export default {
   name: 'App',
-  components: {TrustedModule, MyFooter, HistoryModule, AdvantagesModule, MainModule, MyHeader},
+  components: {ContactModule, TrustedModule, MyFooter, HistoryModule, AdvantagesModule, MainModule, MyHeader},
   data: () => ({
     // Список модулей
     modules: [

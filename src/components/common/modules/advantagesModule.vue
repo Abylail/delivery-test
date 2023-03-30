@@ -41,8 +41,13 @@ export default {
     text-align: center;
     background: $color--background-gray;
     border-radius: 12px;
-    width: 218px;
+    width: 20%;
     padding: 20px 18px;
+    margin-bottom: 24px;
+    @media (max-width: $mobile-break-point) {
+      width: calc(100% - 48px);
+      margin: 0 auto 24px;
+    }
   }
 
 }

@@ -45,6 +45,7 @@ export default {
   top: 0;
   height: 80px;
   background: white;
+  z-index: 11;
 
   &__container {
     display: flex;
@@ -68,6 +69,7 @@ export default {
     align-items: center;
     justify-content: right;
     border-right: 1px solid $color--light-gray;
+    @media (max-width: $mobile-break-point) {display: none;}
   }
 
   &__link {
@@ -77,6 +79,10 @@ export default {
   &__contact {
     color: $color--purple;
     padding-left: 20px;
+    @media (max-width: $mobile-break-point) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
 }

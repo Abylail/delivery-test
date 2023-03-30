@@ -32,6 +32,7 @@ export default {
 
   &__item {
     display: block;
+    margin: 0 auto 24px;
   }
 
 }
