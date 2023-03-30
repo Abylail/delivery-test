@@ -7,4 +7,4 @@
 
 ## Документация по [assets](./src/assets/README.md)
 
-## Документация по [компонентам](./src/assets/README.md)
+## Документация по [компонентам](./src/components/README.md)
